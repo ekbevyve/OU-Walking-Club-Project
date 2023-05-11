@@ -6,30 +6,42 @@ font-size: xx-large;
 padding: 25px;
 }
 #upperlink{
-    text-align: right;
-    color:blue;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-decoration-line: underline;
-    text-decoration-color: blue;
-    float: right;
-    padding: 25px;
+text-align: right;
+color:blue;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+text-decoration-line: underline;
+text-decoration-color: blue;
+float: right;
+padding: 25px;
 }
-      table, tr, td{
-        border: 1px solid;
-        border-collapse: collapse;
-        border-color: black;
-        padding:10px;
-        }
-        #menuitem{
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        color:blue;
-        text-align: left;
-        text-decoration-line: underline;
-        text-decoration-color: blue;
-        }
-        #menuitem:hover{
-            background-color: #f2f2f2;
-            }
-        #menuitem:hover:active{
-            background-color: #b3b3b3;
-            }
+table, tr, td{
+border: 1px solid;
+border-collapse: collapse;
+border-color: black;
+padding:10px;
+}
+#menuitem{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+color:blue;
+text-align: left;
+text-decoration-line: underline;
+text-decoration-color: blue;
+}
+#menuitem:hover{
+background-color: #f2f2f2;
+}
+#menuitem:hover:active{
+background-color: #b3b3b3;
+}
+#newsinputter{
+width: 40%;
+border: 1px solid;
+border-color: black;
+padding:10px;
+}
+#title{
+padding:10px;
+}
+#bodytext{
+padding:10px;
+}
