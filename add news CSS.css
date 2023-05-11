@@ -1,0 +1,16 @@
+#Heading{
+text-align: left;
+color:black;
+font-family: 'Courier New', Courier, monospace;
+font-size: xx-large;
+padding: 25px;
+}
+#upperlink{
+    text-align: right;
+    color:blue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration-line: underline;
+    text-decoration-color: blue;
+    float: right;
+    padding: 25px;
+}
