@@ -16,8 +16,8 @@
     }
     .workspace{
     display:grid;
-    grid-template-columns: auto auto auto;
-    column-gap: 5px;
+    grid-template-columns: 1fr 2fr 5fr;
+    column-gap: 1px;
     }
     table, tr, td{
     border: 1px solid;
@@ -39,10 +39,10 @@
     background-color: #b3b3b3;
     }
     .newsinputter{
+    width:fit-content;
     border: 1px solid;
     border-color: black;
-    padding:10px;
-    text-align: center;
+    padding:5px;
     }
     input:focus{
     border-radius: 3px solid #555;
