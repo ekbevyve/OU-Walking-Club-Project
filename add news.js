@@ -35,9 +35,11 @@ function loadNewsEntries() {
     if (newsEntries) {
         newsEntries = JSON.parse(newsEntries);
         for (var i = 0; i < newsEntries.length; i++) {
+            const container = document.getElementById('allnews');
             const section = document.createElement('div');
+            section.setAttribute('class','newsitem');
             section.innerHTML = ` <h3> ${newsEntries[i].title} </h3> <br> <p> ${newsEntries[i].author} \n ${newsEntries[i].body} </p>`;
-            container.appendChild(section);
+            container.appendChild(section)
         }
     }
 }
