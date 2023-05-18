@@ -10,35 +10,35 @@
     <script src="add news.js"></script>
   </head>
 <body>
-  <a href="login" id="upperlink">Home</a><a href="login" id="upperlink">Log Out</a>
+  <a href="login" class="upperlink">Home</a><a href="login" class="upperlink">Log Out</a>
     <h1 id="Heading"> OU Walking Club: Admin Page</h1>
-
-  <div class="workspace">
-    <div class="menu">
-      <table id="menubar">
-        <tr><td id="menuitem" href="UserReq.html">User Requests</td></tr>
-        <tr><td id="menuitem" href="EditUser.html"> Edit Existing User </td></tr>
-        <tr><td id="menuitem" href="Suggestion.html"> Walk/Social Suggestions </td></tr>
-        <tr><td id="menuitem" href="EventTool.html"> Create/Edit Events </td></tr>
-        <tr><td id="menuitem" href="add-news HTML.html"> Add News </td></tr>
-      </table id="menubar">  
+  
+  <div id="workspace">
+    <div class="menu" id="menubar">
+      <table>
+        <tr><td class="menuitem" href="UserReq.html">User Requests</td></tr>
+        <tr><td class="menuitem" href="EditUser.html"> Edit Existing User </td></tr>
+        <tr><td class="menuitem" href="Suggestion.html"> Walk/Social Suggestions </td></tr>
+        <tr><td class="menuitem" href="EventTool.html"> Create/Edit Events </td></tr>
+        <tr><td class="menuitem" href="add-news HTML.html"> Add News </td></tr>
+      </table>  
     </div>
-
-    <div class="newsinputter">
+  
+    <div id="newsinputter">
       <form id="newsform">
         <input type="text" id="title" name="title" placeholder="Title of News Article"> <br>
+        <input type="text" id="author" name="author" placeholder="Author Name"> <br>
         <textarea id="bodytext" name="bodytext" rows=20% cols=40% placeholder="Body of text"></textarea> <br>
-        <label for = "startdate"> Start date: </label><input type="date" id="startdate" name="startdate"> 
+        <label for = "startdate"> Start Date: <input type="date" id="startdate" name="startdate">
         <label for = "enddate"> End date: </label><input type="date" id="enddate" name="enddate"> <br>
         <button id="savecreate">Save/Create</button>
       </form> 
     </div>
-
-    <div class="allnews">
-      <p>news items...</p>
+  
+    <div id="allnews">
     </div>
+  
   </div>
 </body>
-
-</html>
   
+</html>
