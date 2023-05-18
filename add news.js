@@ -7,13 +7,6 @@ function NewsSave() {
     var author = document.getElementById('author').value;
     var bodytextsample = document.getElementById('bodytext').value.substring(0,50)+"...";
 
-    //appending it to page
-    const container = document.getElementById('allnews');
-    const section = document.createElement('div');
-    section.setAttribute('class','newsitem');
-    section.innerHTML = ` <h3 class="news"> ${title} </h3> <br> <p class="news"> ${author} \n ${bodytextsample} </p>`;
-    container.appendChild(section)
-
     //saving to local storage
     var newsEntries = localStorage.getItem('newsEntries');
     if (newsEntries) {
