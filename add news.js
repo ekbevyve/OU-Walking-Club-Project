@@ -1,50 +1,36 @@
-/**
- * Function to save news entries and add them to the page
- */
+function NewsCount() {
+    return Object.keys(localStorage).length;
+}
+
 function NewsSave() {
-    //grabbing all values from the news input form
+    // Grabbing all values from the news input form
     var title = document.getElementById('title').value;
     var author = document.getElementById('author').value;
-    var bodytextsample = document.getElementById('bodytext').value.substring(0,50)+"...";
+    var bodytextsample = document.getElementById('bodytext').value.substring(0, 50) + "...";
 
-    //saving to local storage
-    var newsEntries = localStorage.getItem('newsEntries');
-    if (newsEntries) {
-        newsEntries = JSON.parse(newsEntries);
-    } else {
-        newsEntries = [];
-    }
-    newsEntries.push({ title: title, author: author, body: bodytextsample });
-    localStorage.setItem('newsEntries', JSON.stringify(newsEntries));
-
+    // Saving to local storage
+    var key = NewsCount() + 1;
+    localStorage.setItem(key, JSON.stringify({ title: title, author: author, body: bodytextsample }));
 }
 
-/**
- * Function to load news entries from local storage
- */
 function loadNewsEntries() {
     const container = document.getElementById('allnews');
-    var newsEntries = localStorage.getItem('newsEntries');
-    if (newsEntries) {
-        newsEntries = JSON.parse(newsEntries);
-        for (var i = 0; i < newsEntries.length; i++) {
-            const container = document.getElementById('allnews');
-            const section = document.createElement('div');
-            section.setAttribute('class','newsitem');
-            section.innerHTML = ` <h3> ${newsEntries[i].title} </h3> <br> <p> ${newsEntries[i].author} \n ${newsEntries[i].body} </p>`;
-            container.appendChild(section)
-        }
+
+    for (var i = 0; i < localStorage.length; i++) {
+        var key = localStorage.key(i);
+        var newsItem = JSON.parse(localStorage.getItem(key));
+
+        const section = document.createElement('div');
+        section.setAttribute('class', 'newsitem');
+        section.innerHTML = `<h3>${newsItem.title}</h3><br><p>${newsItem.author}<br>${newsItem.body}</p>`;
+        container.appendChild(section);
     }
 }
 
-
-/**
- * Function to connect event listeners
- */
 function initialize() {
     var saveButton = document.querySelector("#savecreate");
     saveButton.addEventListener("click", NewsSave);
     loadNewsEntries();
 }
 
-window.addEventListener("load", initialize)
+window.addEventListener("load", initialize);
