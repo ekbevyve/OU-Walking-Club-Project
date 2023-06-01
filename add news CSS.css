@@ -1,73 +1,73 @@
 #Heading{
-border: 1px solid;
-border-color: black;    
-text-align: left;
-color:black;
-font-family: 'Courier New', Courier, monospace;
-font-size: xx-large;
-padding: 25px;
+    border: 1px solid;
+    border-color: black;    
+    text-align: left;
+    color:black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: xx-large;
+    padding: 25px;
 }
 *{  
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .upperlink{
-text-align: right;
-color:blue;
-text-decoration-line: underline;
-text-decoration-color: blue;
-float: right;
-padding: 25px;
+    text-align: right;
+    color:blue;
+    text-decoration-line: underline;
+    text-decoration-color: blue;
+    float: right;
+    padding: 25px;
 }
 #workspace{
-display:grid;
-grid-template-columns: 1fr 2fr 5fr;
-column-gap: 1px;
+    display:grid;
+    grid-template-columns: 1fr 2fr 5fr;
+    column-gap: 1px;
 }
-table, tr, td{
-border: 1px solid;
-border-collapse: collapse;
-border-color: black;
-padding:10px;
+    table, tr, td{
+    border: 1px solid;
+    border-collapse: collapse;
+    border-color: black;
+    padding:10px;
 }
 .menuitem{
-color:blue;
-text-align: left;
-text-decoration-line: underline;
-text-decoration-color: blue;
+    color:blue;
+    text-align: left;
+    text-decoration-line: underline;
+    text-decoration-color: blue;
 }
 #menuitem:hover{
-background-color: #f2f2f2;
+    background-color: #f2f2f2;
 }
 #menuitem:hover:active{
-background-color: #b3b3b3;
+    background-color: #b3b3b3;
 }
 #newsinputter{
-width:fit-content;
-height:fit-content;
-border: 1px solid;
-border-color: black;
-padding:5px;
+    width:fit-content;
+    height:fit-content;
+    border: 1px solid;
+    border-color: black;
+    padding:5px;
 }
 input:focus{
-border-radius: 3px solid #555;
+    border-radius: 3px solid #555;
 }
 #savecreate,#title,#bodytext,#author{
-display:block;
-margin:0 auto;
+    display:block;
+    margin:0 auto;
 }
 .newsitem{
-border: 1px solid;
-border-color: black;
-padding: 10px;
-width:95%;
+    border: 1px solid;
+    border-color: black;
+    padding: 10px;
+    width:95%;
 }
 h3.news{
-padding:5px;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-font-weight: bold;
-text-decoration: underline;
-text-decoration-color: black;
+    padding:5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: black;
 }
 p.news{
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
